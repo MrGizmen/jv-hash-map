@@ -76,8 +76,8 @@ public class MyHashMap<K, V> implements MyMap<K, V> {
     }
 
     private static class Node<K, V> {
-        final K key;
-        V value;
+        private final K key;
+        private V value;
         private Node<K, V> next;
 
         Node(K key, V value) {
